@@ -1,0 +1,16 @@
+.navbar {
+    @include gradient;
+    
+    .navbar-nav {
+            padding: 1rem; 
+            .nav-link {
+                    color: $white !important;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    margin-left: 1rem; 
+                    font-size: 1.2rem; 
+            }
+        }
+}
+        
+    

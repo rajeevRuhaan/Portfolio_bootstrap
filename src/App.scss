@@ -1,0 +1,38 @@
+//bootstrap
+@import '~bootstrap/scss/bootstrap'; 
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+// fontawesom import
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+
+
+// import custom setting
+@import 'scss/custom';
+
+// import varaiables
+@import 'scss/varaiables';
+
+
+//IMPORT THE COMPONENTS
+
+@import 'scss/components/animations';
+@import 'scss/components/mixins';
+@import 'scss/components/buttons';
+@import 'scss/components/typography';
+
+// IMPORT THE SECTIONS
+@import 'scss/sections/navbar';
+@import 'scss/sections/intro-section';
+@import 'scss/sections/stacks';
+@import 'scss/sections/services';
+@import 'scss/sections/testimonials';
+@import 'scss/sections/faq';
+@import 'scss/sections/portfolio';
+@import 'scss/sections/publication';
+@import 'scss/sections/contact';
+@import 'scss/sections/footer';
