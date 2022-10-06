@@ -1,0 +1,32 @@
+name: hosting
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout action
+        uses: actions/checkout@v3
+      - name: setup node
+        uses: actions/setup-node@v3
+        with: 
+          node-version: '16.x'
+          cache: 'npm'
+      - name: install
+        run: npm ci
+      - name: build
+        run: npm run build
+      - name: Deploy
+        uses: netlify/actions/cli@master
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        with:
+          args: deploy --prod
+      - name: End
+        run: echo "Ended task."
+      
+
+      
