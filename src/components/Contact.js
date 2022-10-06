@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { send } from "emailjs-com";
+import { Store } from "react-notifications-component";
+import "react-notifications-component/dist/theme.css";
+
 import { Col, Container, Row } from "react-bootstrap";
 import IntroIllustration from "../images/arts/intro-section-illustration.png";
 
@@ -13,9 +17,44 @@ const Contact = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    {
-      /* --- METHOD TO SEND THE MAIL --- */
-    }
+    send("service_9o38sva", "template_2vam4li", toSend, "8fXU04wVxhAgl9FuM")
+      .then((response) => {
+        Store.addNotification({
+          title: "Success",
+          message: "Your message has been sent successfully",
+          type: "success",
+          insert: "top",
+          container: "top-right",
+          animationIn: ["animate__animated", "animate__fadeIn"],
+          animationOut: ["animate__animated", "animate__fadeOut"],
+          dismiss: {
+            duration: 5000,
+            onScreen: true,
+          },
+        });
+        setToSend({
+          from_name: "",
+          from_last_name: "",
+          to_name: "Rajeev",
+          message: "",
+          reply_to: "",
+        });
+      })
+      .catch((err) => {
+        Store.addNotification({
+          title: "Error",
+          message: "Failed to send message",
+          type: "success",
+          insert: "top",
+          container: "top-right",
+          animationIn: ["animate__animated", "animate__fadeIn"],
+          animationOut: ["animate__animated", "animate__fadeOut"],
+          dismiss: {
+            duration: 5000,
+            onScreen: true,
+          },
+        });
+      });
   };
 
   const handleChange = (e) => {
@@ -55,6 +94,8 @@ const Contact = () => {
                 <div className="col-lg-6 col-md-6 mb-3">
                   <input
                     value={toSend.from_name}
+                    name="from_name"
+                    onChange={handleChange}
                     type="text"
                     placeholder="First Name"
                     id="firstname"
@@ -64,6 +105,8 @@ const Contact = () => {
                 <div className="col-lg-6 col-md-6 mb-3">
                   <input
                     value={toSend.from_last_name}
+                    name="from_last_name"
+                    onChange={handleChange}
                     type="text"
                     placeholder="Last Name"
                     id="lastname"
@@ -72,6 +115,9 @@ const Contact = () => {
                 </div>
                 <div className="col-lg-12 mb-3">
                   <input
+                    value={toSend.reply_to}
+                    name="reply_to"
+                    onChange={handleChange}
                     type="email"
                     placeholder="Email"
                     id="email"
@@ -80,16 +126,19 @@ const Contact = () => {
                 </div>
                 <div className="col-lg-12 mb-3">
                   <textarea
+                    value={toSend.message}
                     name="message"
+                    onChange={handleChange}
                     id="message"
                     className="shadow form-control form-control-lg"
                     rows="8"
                     palceholder="Message"
+                    maxLength={200}
                   ></textarea>
                 </div>
                 <div className="text-center d-grid mt-1">
                   <button
-                    type="button"
+                    type="submit"
                     className="btn btn-primary rounded-pill"
                     pt-3
                     pb-3

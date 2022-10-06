@@ -1,27 +1,36 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Recipe from "../images/portfolio/Recipe1.png";
-import Portfolio2 from "../images/portfolio/portfolio-2.jpg";
+import Portfolio2 from "../images/portfolio/Nike-Sneaker.png";
+import Portfolio3 from "../images/portfolio/List-Countries.png";
+import Portfolio4 from "../images/portfolio/DevNet.png";
 
 const Portfolio = () => {
   const datas = [
     {
       image: Recipe,
       projectName: "Recipe Book",
-      githubLink: "https://github.com/",
-      serverLink: "https://getbootstrap.com/",
+      githubLink: "https://github.com/rajeevRuhaan/homerecipe",
+      serverLink: "https://happy-kilby-4009e8.netlify.app/",
     },
     {
       image: Portfolio2,
-      projectName: "first Project2",
-      githubLink: "https://github.com/",
-      serverLink: "https://getbootstrap.com/",
+      projectName: "Nike-Sneaker",
+      githubLink:
+        "https://github.com/rajeevRuhaan/fs9_fullstack_ecommerce-page",
+      serverLink: "https://nikesneakers2022.netlify.app/",
     },
     {
-      image: Portfolio2,
-      projectName: "first Project3",
-      githubLink: "https://github.com/",
-      serverLink: "https://getbootstrap.com/",
+      image: Portfolio3,
+      projectName: "Countries Info",
+      githubLink: "https://github.com/rajeevRuhaan/list-countries",
+      serverLink: "https://countrieslists.netlify.app/",
+    },
+    {
+      image: Portfolio4,
+      projectName: "DevNet",
+      githubLink: "https://github.com/rajeevRuhaan/Social-App-Summer-BC",
+      serverLink: "https://devnet-bc.herokuapp.com/",
     },
   ];
 
@@ -41,7 +50,6 @@ const Portfolio = () => {
               <Col lg={4} md={6} key={data.projectName}>
                 <div className={`portfolio-box shadow`}>
                   <img
-                    className={`fluid`}
                     src={data.image}
                     alt="portfolio project 1"
                     title="portfolio project picture"
@@ -50,10 +58,18 @@ const Portfolio = () => {
                     <div className={`caption`}>
                       <h4>{data.projectName}</h4>
                       <div className={`link`}>
-                        <a href={data.githubLink}>
+                        <a
+                          href={data.githubLink}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <i className="fa-brands fa-square-github"></i>
                         </a>
-                        <a href={data.serverLink}>
+                        <a
+                          href={data.serverLink}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <i className="fa-solid fa-link"></i>
                         </a>
                       </div>

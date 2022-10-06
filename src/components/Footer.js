@@ -152,8 +152,8 @@ const Footer = () => {
             <Row className="text-center">
               <Col>
                 <div className="footer-bottom__copyright">
-                  &copy;Copyright 2021 <a href="#">Rajeev</a> | Created by{" "}
-                  <a href="#">Rajeev Sah</a>
+                  &copy;Copyright 2021 <a href="#something">Rajeev</a> | Created
+                  by <a href="#something">Rajeev Sah</a>
                 </div>
               </Col>
             </Row>

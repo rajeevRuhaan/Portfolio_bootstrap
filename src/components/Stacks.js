@@ -61,9 +61,6 @@ const Stacks = () => {
               );
             })}
           </Row>
-          {/*           <div style={{ fontSize: "6rem" }}>
-            <i className={`fa-brands fa-react`}></i>
-          </div> */}
         </Container>
       </section>
     </>

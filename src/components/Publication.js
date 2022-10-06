@@ -8,13 +8,6 @@ import Carousel from "react-bootstrap/Carousel";
 const Publication = () => {
   return (
     <section id="publication" className="publication pt-5">
-      {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fff"
-          fillOpacity="1"
-          d="M0,160L30,133.3C60,107,120,53,180,37.3C240,21,300,43,360,64C420,85,480,107,540,133.3C600,160,660,192,720,176C780,160,840,96,900,69.3C960,43,1020,53,1080,80C1140,107,1200,149,1260,154.7C1320,160,1380,128,1410,112L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
-        ></path>
-      </svg> */}
       <Container>
         <Row>
           <div className={`display-3 text-center`}>
@@ -42,7 +35,7 @@ const Publication = () => {
               </a>
             </div>
             <div className="publication__card">
-              <img fluid src={Publication1} alt="publication one" />
+              <img src={Publication1} alt="publication one" />
             </div>
             <p className="text-white">
               This is my master thesis. The work was to develop laboratory scale
