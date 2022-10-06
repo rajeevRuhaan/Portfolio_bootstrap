@@ -18,8 +18,8 @@ const Footer = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1"
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
@@ -28,7 +28,7 @@ const Footer = () => {
               </svg>
             </div>
             <div className="contact-box__info">
-              <a href="tel:+358440378568" class="contact-box__info--title">
+              <a href="tel:+358440378568" className="contact-box__info--title">
                 +358 44 0378568
               </a>
             </div>
@@ -45,8 +45,8 @@ const Footer = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1"
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <polyline points="3 9 12 15 21 9 12 3 3 9" />

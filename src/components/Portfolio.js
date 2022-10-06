@@ -38,7 +38,7 @@ const Portfolio = () => {
     <section id="portfolio" className={`portfolio`}>
       <Container>
         <Row className={`text-center mt-5`}>
-          <h1>Project Dispaly</h1>
+          <h1>Project Display</h1>
           <div className={`heading-line mb-5`}></div>
           <p>All the projects were created for study purpose. </p>
         </Row>
