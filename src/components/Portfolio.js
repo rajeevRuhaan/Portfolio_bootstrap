@@ -4,6 +4,7 @@ import Recipe from "../images/portfolio/Recipe1.png";
 import Portfolio2 from "../images/portfolio/Nike-Sneaker.png";
 import Portfolio3 from "../images/portfolio/List-Countries.png";
 import Portfolio4 from "../images/portfolio/DevNet.png";
+import Portfolio5 from "../images/portfolio/Delicious_restaurant.png";
 
 const Portfolio = () => {
   const datas = [
@@ -31,6 +32,12 @@ const Portfolio = () => {
       projectName: "DevNet",
       githubLink: "https://github.com/rajeevRuhaan/Social-App-Summer-BC",
       serverLink: "https://devnet-bc.herokuapp.com/",
+    },
+    {
+      image: Portfolio5,
+      projectName: "Delicious Restaurant",
+      githubLink: "https://github.com/rajeevRuhaan/delicious-restaurant",
+      serverLink: "https://rajeevruhaan.github.io/delicious-restaurant/",
     },
   ];
 
