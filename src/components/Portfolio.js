@@ -5,6 +5,7 @@ import Portfolio2 from "../images/portfolio/Nike-Sneaker.png";
 import Portfolio3 from "../images/portfolio/List-Countries.png";
 import Portfolio4 from "../images/portfolio/DevNet.png";
 import Portfolio5 from "../images/portfolio/Delicious_restaurant.png";
+import Portfolio6 from "../images/portfolio/webShop.png";
 
 const Portfolio = () => {
   const datas = [
@@ -39,13 +40,19 @@ const Portfolio = () => {
       githubLink: "https://github.com/rajeevRuhaan/delicious-restaurant",
       serverLink: "https://rajeevruhaan.github.io/delicious-restaurant/",
     },
+    {
+      image: Portfolio6,
+      projectName: "Web-Shop",
+      githubLink: "https://github.com/rajeevRuhaan/crown-cloting",
+      serverLink: "https://shiny-cranachan-bef447.netlify.app/",
+    },
   ];
 
   return (
     <section id="portfolio" className={`portfolio`}>
       <Container>
         <Row className={`text-center mt-5`}>
-          <h1>Project Display</h1>
+          <h1>Project Displays</h1>
           <div className={`heading-line mb-5`}></div>
           <p>All the projects were created for study purpose. </p>
         </Row>
