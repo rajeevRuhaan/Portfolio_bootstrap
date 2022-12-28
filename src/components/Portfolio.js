@@ -28,12 +28,12 @@ const Portfolio = () => {
       githubLink: "https://github.com/rajeevRuhaan/list-countries",
       serverLink: "https://countrieslists.netlify.app/",
     },
-    {
+    /* {
       image: Portfolio4,
       projectName: "DevNet",
       githubLink: "https://github.com/rajeevRuhaan/Social-App-Summer-BC",
       serverLink: "https://devnet-bc.herokuapp.com/",
-    },
+    }, */
     {
       image: Portfolio5,
       projectName: "Delicious Restaurant",
