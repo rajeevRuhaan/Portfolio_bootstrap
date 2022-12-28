@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Recipe from "../images/portfolio/Recipe1.png";
 import Portfolio2 from "../images/portfolio/Nike-Sneaker.png";
 import Portfolio3 from "../images/portfolio/List-Countries.png";
-import Portfolio4 from "../images/portfolio/DevNet.png";
+/* import Portfolio4 from "../images/portfolio/DevNet.png"; */
 import Portfolio5 from "../images/portfolio/Delicious_restaurant.png";
 import Portfolio6 from "../images/portfolio/webShop.png";
 
