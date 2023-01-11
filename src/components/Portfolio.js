@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Recipe from "../images/portfolio/Recipe1.png";
 import Portfolio2 from "../images/portfolio/Nike-Sneaker.png";
 import Portfolio3 from "../images/portfolio/List-Countries.png";
-/* import Portfolio4 from "../images/portfolio/DevNet.png"; */
+import Portfolio4 from "../images/portfolio/monster-rolodex.png";
 import Portfolio5 from "../images/portfolio/Delicious_restaurant.png";
 import Portfolio6 from "../images/portfolio/webShop.png";
 
@@ -28,12 +28,12 @@ const Portfolio = () => {
       githubLink: "https://github.com/rajeevRuhaan/list-countries",
       serverLink: "https://countrieslists.netlify.app/",
     },
-    /* {
+    {
       image: Portfolio4,
-      projectName: "DevNet",
-      githubLink: "https://github.com/rajeevRuhaan/Social-App-Summer-BC",
-      serverLink: "https://devnet-bc.herokuapp.com/",
-    }, */
+      projectName: "Monster Rolodex",
+      githubLink: "https://github.com/rajeevRuhaan/monster-rolodex",
+      serverLink: "https://rajeevruhaan.github.io/monster-rolodex/",
+    },
     {
       image: Portfolio5,
       projectName: "Delicious Restaurant",
